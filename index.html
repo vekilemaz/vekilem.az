@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vəkil Elşad Məmmədov - Ana Səhifə</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #1a252f;
+        }
+
+        header {
+            background-color: #1a252f;
+            color: #d4af37;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .logo img {
+            height: 35px;
+        }
+
+        .page-title {
+            flex: 2;
+            text-align: center;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .burger-menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .hero img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            font-size: 1.5rem;
+            display: block;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .hero h3 {
+            color: #666;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .service-card i {
+            font-size: 2rem;
+            color: #1a252f;
+            margin-bottom: 15px;
+        }
+
+        .why-us {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .why-us h2 {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .reasons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .reason {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-left: 4px solid #d4af37;
+            text-align: left;
+        }
+
+        .reason h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #aaa;
+            max-width: 60%;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .socials a {
+            color: #fff;
+            font-size: 1.8rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-align: center;
+        }
+
+        .socials a:hover {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Büro Loqosu">
+        </div>
+        <div class="page-title">Ana Səhifə</div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="image.jpg" alt="Vəkil Elşad Məmmədov">
+        <h1><span>Vəkil</span> Elşad Məmmədov</h1>
+        <h3>Peşəkar Hüquq Xidməti</h3>
+        <p>Hüququn dili ilə ədalət. Mürəkkəb hüquqi məsələlərinizdə etibarlı və təcrübəli tərəfdaşınız olaraq, hüquqlarınızın qorunması üçün peşəkar xidmət göstəririk.</p>
+    </section>
+
+    <section class="services">
+        <h2>Xidmət Sahələri</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Korporativ Hüquq</h3>
+                <p>Şirkətlərin hüquqi müşayiəti və müqavilələrin hazırlanması.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-users"></i>
+                <h3>Ailə Hüququ</h3>
+                <p>Boşanma, aliment və əmlak bölgüsü məsələlərinin həlli.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-gavel"></i>
+                <h3>Cinayət Hüququ</h3>
+                <p>İstintaq və məhkəmə mərhələsində peşəkar müdafiə.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2>Niyə Məhz Biz?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Çoxillik Təcrübə</h3>
+                <p>Uzun illər boyu qazanılmış təcrübə sayəsində ən çətin işlərdə belə yüksək nəticələr əldə edirik.</p>
+            </div>
+            <div class="reason">
+                <h3>Məxfilik və Güvən</h3>
+                <p>Müştərilərimizin məlumatlarının tam məxfiliyinə zəmanət verir və qarşılıqlı inam əsasında işləyirik.</p>
+            </div>
+            <div class="reason">
+                <h3>Fərdi Yanaşma</h3>
+                <p>Hər bir hüquqi problemə standart deyil, tam fərdi və detallı şəkildə yanaşaraq ən uyğun həll yolunu tapırıq.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Bütün hüquqlar qorunur © 2026</p>
+            <p>Vəkil Elşad Məmmədov</p>
+        </div>
+        
+        <div class="socials">
+            <a href="https://www.instagram.com/vekil.elshadmammadov?igsh=Yjd2MnU2eWV3YTBt" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/994502160504" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
